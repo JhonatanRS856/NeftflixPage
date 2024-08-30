@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../dist/input.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./login.css">
+
+    <!-- Iconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+</head>
+<body class="min-h-[100vh] bg-[var(--color-dark)] flex items-center justify-center">
+    <img src="../img/logo.png" alt="Logo Netflix" class="logo left-4 lg:left-[2.2rem]">
+    <div class="wrapper">
+        <h2>Sign in</h2>
+
+        <form action="#">
+            <div class="input-content">
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Email or phone number</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+            </div>
+
+            <button type="submit">
+                Sign in
+            </button>
+        </form>
+        <div class="form-help">
+            <div class="remember-me">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me"> Remember me</label>
+            </div>
+            <a href="#">Need Help?</a>
+        </div>
+        <footer class="mt-10">
+            <p class="text-[var(--color-gray)] text-[15px] mb-1">New to Netflix? <a href="#" class="text-white font-semibold hover:underline">Sign up now</a></p>
+            <small>
+                This page is protected by Google reCAPTCHA to ensure you're not a bot. <span class="text-blue-500 hover:underline cursor-pointer">Learn More</span>
+            </small>
+        </footer>
+    </div>
+</body>
+</html>

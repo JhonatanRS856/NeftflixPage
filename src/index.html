@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix</title>
+
+  <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="../dist/input.css">
+  <link rel="stylesheet" href="../dist/output.css">
+  <link rel="stylesheet" href="./main.css">
+
+  <!-- Iconos -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+<body class="bg-[var(--color-dark)]">
+  <div class="content min-h-[100vh] w-full text-white overflow-x-hidden">
+    <header>
+      <div class="w-full flex fixed top-0 z-50 duration-300" id="header-fixed">
+        <div class="w-full max-w-[1320px] flex mx-auto items-center p-3 py-4">
+          <img src="../img/logo.png" alt="Logo Netflix" class="w-[100px] ">
+          <nav class="flex items-center ml-4 lg:ml-10 relative">
+            <button class="flex lg:hidden" id="mostrarNav">
+              Explorar
+              <span class="material-icons-sharp">
+                expand_more
+              </span>
+            </button>
+            <ul class="flex flex-col absolute h-0 opacity-0 bg-[#131417e4] top-[190%] left-[50%] translate-x-[-50%]  lg:relative lg:left-auto lg:translate-x-0 lg:top-auto lg:flex-row lg:gap-5 lg:h-auto lg:opacity-100 lg:bg-transparent overflow-hidden" id="nav">
+              <li><a href="#" class="nav_link active border-b-2">Inicio</a></li>
+              <li><a href="#" class="nav_link border-b-2">Series</a></li>
+              <li><a href="#" class="nav_link border-b-2">Películas</a></li>
+              <li><a href="#" class="nav_link border-b-2">Novedades</a></li>
+              <li><a href="#" class="nav_link">Mi Lista</a></li>
+            </ul>
+          </nav>
+          <div class="right-header ml-auto">
+            <button class="flex">
+              <span class="material-icons-sharp">
+                search
+              </span>
+            </button>
+            <button class="flex relative">
+              <span class="material-icons-sharp">
+                notifications
+              </span>
+            </button>
+            <div class="perfiles cursor-pointer">
+              <a href="perfiles.html">
+                <div class="perfil-b">
+                  <div class="profile-box">
+                    <img src="../img/perfil-imgs/RainBoy.jpg" alt="Perfil 1" class="img">
+                  </div>
+  
+                  <span class="material-icons-sharp flex">
+                    keyboard_arrow_down
+                  </span>
+  
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section-hero h-[100vh]">
+      <div class="w-full max-w-[1320px] flex my-auto px-4">
+        <div class="content-hero">
+          <img src="../img/image2.webp" alt="" class="mb-9 h-[240px]">
+          <div class="body-hero w-full max-w-[500px]">
+            <div class="titulo-hero">
+              <div class="w-9">
+                <img src="../img/top10.png" alt="" class="w-full">
+              </div>
+              <h2>#3 in TV Shows Today</h2>
+            </div>
+            <p>
+              Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora
+              quaeritis. Summus brains sit​​.
+            </p>
+            <div class="buttons">
+              <button class="btn">
+                <span class="material-icons-sharp">
+                  play_arrow
+                </span>
+                Play
+              </button>
+              <button class="btn">
+                <span class="material-icons-sharp">
+                  info
+                </span>
+                More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <video class="video-background" src="../video/video.mp4" muted loop autoplay></video>
+      <div class="bottom-overlay"></div>
+    </section>
+    <main class="py-[50px] pl-4">
+      <div class="w-full max-w-[1320px] mx-auto overflow-hidden">
+        <h3 class="title-carrusel">Más Populares</h3>
+
+        <div class="carrusel-principal">
+          <button class="btn-navigation lft" role="button" id="btnLeft">
+            <span class="material-icons-sharp">
+              arrow_back_ios
+            </span>
+          </button>
+
+          <div class="div-carrusel" id="container-carrusel">
+              <div class="carrusel" id="carrusel">
+                
+              </div>
+          </div>
+
+          <button class="btn-navigation rth" role="button" id="btnRight">
+            <span class="material-icons-sharp">
+              arrow_forward_ios
+            </span>
+          </button>
+        </div>
+
+      </div>
+    </main>
+    <footer class="bg-[#151515] w-full p-4 py-8">
+      <div class="w-full mx-auto max-w-[1320px]">
+        <div class="redes">
+          <i class='bx bxl-facebook'></i>
+          <i class='bx bxl-instagram'></i>
+          <i class='bx bxl-github'></i>
+          <i class='bx bxl-linkedin'></i>
+        </div>
+        <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-3 mt-8">
+          <div>
+            <ul>
+              <li><a href="#">Preguntas Frecuentes</a></li>
+              <li><a href="#">Preguntas de velocidad</a></li>
+              <li><a href="#">Información Corporativa</a></li>
+              <li><a href="#">Contactanos</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#">Prensa</a></li>
+              <li><a href="#">Centro de Ayuda</a></li>
+              <li><a href="#">Cuenta</a></li>
+              <li><a href="#">Solo en Netflix</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#">Fromas de ver</a></li>
+              <li><a href="#">Relaciones con inversionistas</a></li>
+              <li><a href="#">Empleo</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#">Preferencias de Cookies</a></li>
+              <li><a href="#">Terminos de Uso</a></li>
+              <li><a href="#">Privacidad</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
